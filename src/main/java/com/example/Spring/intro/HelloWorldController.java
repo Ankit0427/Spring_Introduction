@@ -18,6 +18,15 @@ public class HelloWorldController {
 class HelloController {
     @GetMapping("/hello")
     public String sayHello() {
-        return "<h1>Hello, World!</h1>";
+        return "Hello from bridgelab ";
+    }
+}
+
+@RestController
+@RequestMapping("/abc")
+ class HelloWorldControl {
+    @GetMapping("/helloPage")
+    public String showHelloPage() {
+        return "hello from Bridgelab"; // Refers to hello.html in templates folder
     }
 }
